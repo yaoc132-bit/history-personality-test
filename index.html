@@ -70,4 +70,4 @@ function renderResult(){const top=Object.keys(scores).sort((a,b)=>scores[b]-scor
 function copyResult(){const n=document.getElementById('rName').textContent,t=document.getElementById('rType').textContent,txt=`我的历史人格是【${n}】——${t}\n${people[Object.keys(people).find(k=>people[k].name===n)].quote}\n你也来测测，骨子里最像哪位历史人物？`;navigator.clipboard?.writeText(txt).then(()=>alert('结果文案已复制，可以去小红书分享啦'))}
 function restart(){show('home')}
 document.getElementById('codeInput').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
-</script><script src="upgrade.js"></script></body></html>
+</script><script src="upgrade.js?v=4"></script></body></html>
